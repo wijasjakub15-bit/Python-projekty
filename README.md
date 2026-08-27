@@ -11,7 +11,7 @@ bezpieczeństwa (długość, wielkie/małe litery, cyfry, znaki specjalne).
 
 **Użyte technologie:** Python (pętle, warunki, stringi)
 
-📁 [`/sprawdzacz-sily-hasla`](./sprawdzacz-sily-hasla)
+📁 [`Sprawdzacz sily hasla/Sprawdzacz sily hasla.py`](./Sprawdzacz%20sily%20hasla/Sprawdzacz%20sily%20hasla.py)
 
 ---
 
