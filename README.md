@@ -31,6 +31,7 @@ Program szyfrujący tekst metodą przesunięcia liter w alfabecie o wartość po
 **Użyte technologie:** pętle, moduł `string`, kody znaków (`ord`, `chr`), sprawdzanie poprawności danych od użytkownika
 
 📁 [`Szyfr cezara/Szyfr Cezara.py`](./Szyfr%20cezara/Szyfr%20Cezara.py)
+
 ---
 
 ## O mnie
