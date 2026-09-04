@@ -24,6 +24,16 @@ Program generujący losowe, silne hasło o długości podanej przez użytkownika
 
 ---
 
+### 🔑 Szyfr Cezara
+
+Program szyfrujący tekst metodą przesunięcia liter w alfabecie o wartość podaną przez użytkownika (klasyczny szyfr Cezara). Cyfry, spacje i znaki specjalne pozostają bez zmian, szyfrowane są tylko litery.
+
+**Użyte technologie:** pętle, moduł `string`, kody znaków (`ord`, `chr`), sprawdzanie poprawności danych od użytkownika
+
+📁 [`Szyfr Cezara/Szyfr Cezara.py`](./Szyfr%20Cezara/Szyfr%20Cezara.py)
+
+---
+
 ## O mnie
 
 Uczę się Pythona z naciskiem na cyberbezpieczeństwo. Każdy projekt w tym repozytorium został napisany samodzielnie jako część nauki.
