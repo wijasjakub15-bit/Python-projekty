@@ -34,6 +34,26 @@ Program szyfrujący tekst metodą przesunięcia liter w alfabecie o wartość po
 
 ---
 
+### 📊 Analizator logów
+
+Program czytający plik z logami (adres IP i godzina w każdej linii), który liczy, ile razy pojawił się każdy adres IP. Użytkownik podaje bezpieczny limit, a program wypisuje adresy, które go przekraczają, razem z godziną pierwszej i ostatniej próby. Tak można wykryć podejrzaną aktywność, np. próby włamania metodą brute force. Limit można zmieniać bez ponownego uruchamiania programu.
+
+**Użyte technologie:** odczyt plików, słowniki i listy, `split`, pętle, sprawdzanie poprawności danych od użytkownika
+
+📁 [`Analizator logow/Analizator logow.py`](./Analizator%20logow/Analizator%20logow.py)
+
+---
+
+### 🕵️ Sprawdzacz wycieków haseł
+
+Program sprawdzający, czy podane hasło wyciekło w publicznych wyciekach danych, z wykorzystaniem API serwisu Have I Been Pwned. Hasło jest zamieniane na skrót (hash SHA-1), a do serwera wysyłane jest tylko pierwsze 5 znaków tego skrótu. Serwer odsyła listę pasujących końcówek, a porównanie robi program lokalnie. Dzięki temu serwis nigdy nie poznaje hasła ani pełnego skrótu (metoda k-anonimowości). Program wypisuje, ile razy hasło wyciekło.
+
+**Użyte technologie:** API (moduł `requests`), haszowanie (moduł `hashlib`), kodowanie tekstu na bajty, przetwarzanie odpowiedzi z serwera, pętle
+
+📁 [`Sprawdzacz wyciekow hasel/Sprawdzacz wyciekow hasel.py`](./Sprawdzacz%20wyciekow%20hasel/Sprawdzacz%20wyciekow%20hasel.py)
+
+---
+
 ## O mnie
 
 Uczę się Pythona z naciskiem na cyberbezpieczeństwo. Każdy projekt w tym repozytorium został napisany samodzielnie jako część nauki.
