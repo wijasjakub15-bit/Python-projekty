@@ -40,7 +40,7 @@ Program czytający plik z logami (adres IP i godzina w każdej linii), który li
 
 **Użyte technologie:** odczyt plików, słowniki i listy, `split`, pętle, sprawdzanie poprawności danych od użytkownika
 
-📁 [`Analizator logow/Analizator logow.py`](./Analizator%20logow/Analizator%20logow.py)
+📁 [`Analizator logow/Analizator logow.py`](./Analizator%20logow/Analizator%20%20logow.py)
 
 ---
 
