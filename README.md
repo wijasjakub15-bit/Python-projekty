@@ -74,7 +74,7 @@ Program próbujący odgadnąć hasło ukryte za podanym hashem (MD5 lub SHA-256)
 
 **Użyte technologie:** moduł `hashlib` (MD5, SHA-256), odczyt plików, pętle, sprawdzanie poprawności danych od użytkownika
 
-📁 [`Lamacz haszy/Lamacz haszy.py`](./Lamacz%20haszy/Lamacz%20haszy.py)
+📁 [`Lamacz haszy/Lamacz haszy.py`](./Lamacz%20hashy/Lamacz%20hashy.py)
 
 ---
 
