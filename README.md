@@ -4,7 +4,7 @@ Zbiór małych projektów Python, które tworzę ucząc się programowania, ze s
 
 ## Projekty
 
-### 🔐 Sprawdzacz siły hasła
+### Sprawdzacz siły hasła
 
 Program sprawdzający, czy podane hasło spełnia podstawowe wymagania bezpieczeństwa (długość, wielkie/małe litery, cyfry, znaki specjalne).
 
@@ -14,7 +14,7 @@ Program sprawdzający, czy podane hasło spełnia podstawowe wymagania bezpiecze
 
 ---
 
-### 🎲 Generator haseł
+### Generator haseł
 
 Program generujący losowe, silne hasło o długości podanej przez użytkownika (8-30 znaków), złożone z małych/wielkich liter, cyfr i znaków specjalnych.
 
@@ -24,7 +24,7 @@ Program generujący losowe, silne hasło o długości podanej przez użytkownika
 
 ---
 
-### 🔑 Szyfr Cezara
+### Szyfr Cezara
 
 Program szyfrujący tekst metodą przesunięcia liter w alfabecie o wartość podaną przez użytkownika (klasyczny szyfr Cezara). Cyfry, spacje i znaki specjalne pozostają bez zmian, szyfrowane są tylko litery.
 
@@ -34,7 +34,7 @@ Program szyfrujący tekst metodą przesunięcia liter w alfabecie o wartość po
 
 ---
 
-### 📊 Analizator logów
+### Analizator logów
 
 Program czytający plik z logami (adres IP i godzina w każdej linii), który liczy, ile razy pojawił się każdy adres IP. Użytkownik podaje bezpieczny limit, a program wypisuje adresy, które go przekraczają, razem z godziną pierwszej i ostatniej próby. Tak można wykryć podejrzaną aktywność, np. próby włamania metodą brute force. Limit można zmieniać bez ponownego uruchamiania programu.
 
@@ -44,7 +44,7 @@ Program czytający plik z logami (adres IP i godzina w każdej linii), który li
 
 ---
 
-### 🕵️ Sprawdzacz wycieków haseł
+### Sprawdzacz wycieków haseł
 
 Program sprawdzający, czy podane hasło wyciekło w publicznych wyciekach danych, z wykorzystaniem API serwisu Have I Been Pwned. Hasło jest zamieniane na skrót (hash SHA-1), a do serwera wysyłane jest tylko pierwsze 5 znaków tego skrótu. Serwer odsyła listę pasujących końcówek, a porównanie robi program lokalnie. Dzięki temu serwis nigdy nie poznaje hasła ani pełnego skrótu (metoda k-anonimowości). Program wypisuje, ile razy hasło wyciekło.
 
@@ -54,15 +54,27 @@ Program sprawdzający, czy podane hasło wyciekło w publicznych wyciekach danyc
 
 ---
 
-### 🔍 Skaner portów
+### Skaner portów
 
 Program sprawdzający, które porty TCP są otwarte pod podanym adresem IP. Użytkownik podaje adres (format sprawdzany wyrażeniem regularnym) oraz zakres portów (1-65535), a program próbuje połączyć się z każdym portem po kolei (limit czasu 0,5 s na port). Jeśli połączenie się uda, port jest uznawany za otwarty. Na końcu program wypisuje liczbę i listę znalezionych otwartych portów. Po skanie można od razu sprawdzić kolejny adres. Skan jest wolny, bo porty są sprawdzane jeden po drugim.
 
-⚠️ **Uwaga:** skanuj tylko własne systemy lub takie, na które masz zgodę (np. `127.0.0.1`, `scanme.nmap.org`). Skanowanie cudzych adresów bez zgody może być niezgodne z prawem.
+**Uwaga:** skanuj tylko własne systemy lub takie, na które masz zgodę (np. `127.0.0.1`, `scanme.nmap.org`). Skanowanie cudzych adresów bez zgody może być niezgodne z prawem.
 
 **Użyte technologie:** moduł `socket` (połączenia sieciowe TCP), moduł `re` (wyrażenia regularne), pętle, listy, sprawdzanie poprawności danych od użytkownika
 
 📁 [`Skaner portow/Skaner portow.py`](./Skaner%20portow/Skaner%20portow.py)
+
+---
+
+### Łamacz haszy (słownikowy)
+
+Program próbujący odgadnąć hasło ukryte za podanym hashem (MD5 lub SHA-256), korzystając z ataku słownikowego. Użytkownik podaje hash do złamania, wybiera algorytm oraz plik z listą haseł-kandydatów. Program hashuje każde hasło z listy i porównuje wynik z podanym hashem — po znalezieniu dopasowania przerywa szukanie i wypisuje wynik. Po zakończeniu można od razu sprawdzić kolejny hash.
+
+**Uwaga:** używaj tylko na własnych hashach lub takich, na które masz zgodę. Łamanie cudzych haseł bez zgody może być niezgodne z prawem.
+
+**Użyte technologie:** moduł `hashlib` (MD5, SHA-256), odczyt plików, pętle, sprawdzanie poprawności danych od użytkownika
+
+📁 [`Lamacz haszy/Lamacz haszy.py`](./Lamacz%20haszy/Lamacz%20haszy.py)
 
 ---
 
