@@ -54,6 +54,18 @@ Program sprawdzający, czy podane hasło wyciekło w publicznych wyciekach danyc
 
 ---
 
+### 🔍 Skaner portów
+
+Program sprawdzający, które porty TCP są otwarte pod podanym adresem IP. Użytkownik podaje adres (format sprawdzany wyrażeniem regularnym) oraz zakres portów (1-65535), a program próbuje połączyć się z każdym portem po kolei (limit czasu 0,5 s na port). Jeśli połączenie się uda, port jest uznawany za otwarty. Na końcu program wypisuje liczbę i listę znalezionych otwartych portów. Po skanie można od razu sprawdzić kolejny adres. Skan jest wolny, bo porty są sprawdzane jeden po drugim.
+
+⚠️ **Uwaga:** skanuj tylko własne systemy lub takie, na które masz zgodę (np. `127.0.0.1`, `scanme.nmap.org`). Skanowanie cudzych adresów bez zgody może być niezgodne z prawem.
+
+**Użyte technologie:** moduł `socket` (połączenia sieciowe TCP), moduł `re` (wyrażenia regularne), pętle, listy, sprawdzanie poprawności danych od użytkownika
+
+📁 [`Skaner portow/Skaner portow.py`](./Skaner%20portow/Skaner%20portow.py)
+
+---
+
 ## O mnie
 
-Uczę się Pythona z naciskiem na cyberbezpieczeństwo. Każdy projekt w tym repozytorium został napisany samodzielnie jako część nauki.
+Każdy projekt w tym repozytorium został napisany przeze mnie jako część nauki. Przy nowych modułach (np. `socket`) korzystałem ze wzoru i dokumentacji, a całą resztę logiki napisałem sam.
